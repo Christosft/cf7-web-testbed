@@ -1,0 +1,34 @@
+img {
+    width: 600px;
+    height: auto;
+}
+
+ul>li {
+    color: red;
+}
+
+ul>li:first-child {
+    color: blue;
+}
+
+ul>li:not(:first-child) {
+    background-color: aquamarine;
+}
+
+h1+p {
+    /* το + σημαινει για το αμεσως επομενο*/
+    color: blue;
+}
+
+img~p {
+    /* το ~ σημαινει για ολα τα επομενα*/
+    background-color: green;
+}
+
+a::before {
+    content: '\1F604';
+}
+
+a::after {
+    content: '\1F604';
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="/chapter-3/css/11-form.css">
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <h1>Φορμα Πληρωμης</h1>
+            <div aria-labelledby="Personal-Info">
+                <h2>Προσωπικα Στοιχεια</h2>
+                <fieldset>
+                    <legend>Title</legend>
+                    <div>
+                        <input type="radio" name="title" id="titleMr" value="Mr">
+                        <label for="title">Mr.</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="title" id="titleMrs" value="Mrs">
+                        <label for="title">Mrs.</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="title" id="titleDr" value="Dr">
+                        <label for="title">Dr.</label>
+                    </div>
+                </fieldset>
+                <div>
+                    <label for="username"><span>Username:</span><strong><abbr
+                                title="field is required">*</abbr></strong></label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password">
+                </div>
+            </div>
+            <div aria-labelledby="Payment-Info">
+                <h2>Πληριοφοριες Πληρωμης</h2>
+                <div>
+                    <label for="card"><span>Card Type</span><strong><abbr
+                                title="field is required">*</abbr></strong></label>
+                    <select name="usercard" id="card">
+                        <option value="" selected disabled>Select Card Type</option>
+                        <option value="visa">Visa</option>
+                        <option value="mastercard">Mastercard</option>
+                        <option value="american express">American Express</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="cardnumber"><span>Card Number:</span><strong><abbr
+                                title="field is required">*</abbr></strong></label>
+                    <input type="text" name="cardnumber" id="cardnumber">
+                </div>
+                <div>
+                    <label for="expiration"><span>Expiration Date:</span><strong><abbr
+                                title="field is required">*</abbr></strong></label>
+                    <input type="date" name="expiration" id="expiration" placeholder="MM/YY">
+                </div>
+            </div>
+            <div>
+                <button onclick="submit">Υποβολη</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
