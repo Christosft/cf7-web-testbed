@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: "da373d"
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="text-2xl text-blue-900/10 hover:text-blue-500">
+        Hello Coding!
+    </div>
+
+    <div class="text-4xl text-[hsl(360,80%,50%,0.5)] hover:text-green-500">
+        Athens University Of Economics And Business!
+    </div>
+
+    <div class="text-2xl text-[#FA125A50] hover:text-red-500">
+        Hello color-code!
+    </div>
+
+    <div class="text-4xl text-[RGB(10,140,120,0.8)] hover:text-blue-500">
+        Hello RGB!
+    </div>
+
+    <div class="text-clifford hover:text-blue-500">
+        Hello custom color!
+    </div>
+</body>
+
+</html>

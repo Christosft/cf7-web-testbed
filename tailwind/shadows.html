@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadows</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    boxShadow: {
+                        custom: "0px 4px 20px 0px #00000026"
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <button class="ml-10 px-10 py-4 border-blue-700 bg-purple-700 shadow-custom">Hello Coding Factory</button>
+        <button class="p-10 mx-10 border mt-4 shadow-custom">One</button>
+        <button
+            class="px-10 mx-10 border bg-blue-400 text-white hover:bg-white hover:text-blue-400 rounded-[10px] shadow-lg">Two</button>
+        <button>Three</button>
+    </div>
+</body>
+
+</html>
